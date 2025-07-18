@@ -1,0 +1,89 @@
+/* Products.css */
+
+.page-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  color: #111827;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.icons i {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+/* Edit icon - blue */
+.icons .fa-pen-to-square {
+  color: #2563eb;
+}
+.icons .fa-pen-to-square:hover {
+  background-color: #e0ecff;
+}
+
+/* Trash icon - red */
+.icons .fa-trash {
+  color: #dc2626;
+}
+.icons .fa-trash:hover {
+  background-color: #ffe5e5;
+}
+.product-price {
+  color: #10b981;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}

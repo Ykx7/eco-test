@@ -1,0 +1,141 @@
+.product-view-container {
+  display: flex;
+  height: 90vh;
+  background: #f8f8f8;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.product-left {
+  flex: 1;
+  height: 700px;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 20px;
+}
+
+.product-main-image {
+  width: 600px;
+  height: 710px;
+  object-fit: contain;
+}
+
+.product-right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.product-label {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  color: #4b5563;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 550px;
+}
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.current-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0af616;
+}
+
+.old-price {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  text-decoration: line-through;
+}
+
+.add-to-cart-button {
+  background-color: #111827;
+  color: white;
+  padding: 16px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+}
+
+.add-to-cart-button:hover {
+  background-color: #1f2937;
+}
+
+
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-slider img {
+  /* max-width: 100%; */
+  max-height: 800px;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(17, 24, 39, 0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 6px 14px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(17, 24, 39, 0.9);
+}
+
+.arrow.left {
+  left: -150px;
+}
+
+.arrow.right {
+  right: -150px;
+}
